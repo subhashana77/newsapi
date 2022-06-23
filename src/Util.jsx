@@ -15,10 +15,4 @@ const Util = () => {
     useEffect(() => {
         searchNews();
     });
-    return (
-        <>
-        </>
-    );
 }
-
-export default Util;
