@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+h1 {
+    font-family: 'Fascinate', cursive;
+    color: #aa2a2a;
+}
+
+.news-card {
+    background-color: #e2e2e2;
+}
+
+.single-card a h5 {
+    transition: 0.5s;
+}
+
+.single-card a:hover h5 {
+    color: #313030;
+}
+
+.single-card .image-wrap {
+    overflow: hidden;
+}
+
+.single-card a .image-wrap img {
+    transition: 0.5s;
+}
+
+.single-card a:hover .image-wrap img {
+    transform: scale(1.05);
+}
+
+.news-card h5 {
+    line-height: 24px;
+    color: #666666;
+    font-family: 'Staatliches', cursive;
+}
+
+.news-card p {
+    line-height: 18px;
+    font-size: 15px;
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.news-card .news-card-footer p {
+    font-size: 12px;
+    color: #4141f6;
+    line-height: 13px;
+}
+
+.single-card a .news-card .news-card-footer p {
+    transition: 0.5s;
+}
+
+.single-card a:hover .news-card .news-card-footer p {
+    font-size: 12px;
+    color: #8080ef;
+    line-height: 13px;
+}
+
+.single-card a .news-card {
+    transition: 0.5s;
+}
+
+.single-card a:hover .news-card {
+    -webkit-box-shadow: 0 0 5px 3px rgba(0,0,0,0.18);
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.18);
+    background-color: #efeded;
+}

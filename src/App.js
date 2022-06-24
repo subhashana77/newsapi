@@ -17,15 +17,24 @@ function App() {
 
     useEffect(() => {
         searchNews();
-    });
+    },[]);
 
     return (
-        <div className="App">
-            {
-                news.map((news) => (
-                    <NewsCard news={news}/>
-                ))
-            }
+        <div className="App container">
+            <h1 className="w-100 text-center mt-5 mb-4">News Paper Today</h1>
+            {news?.length > 0 ? (
+                <div className="row">
+                    {
+                        news.map((news, i) => (
+                            <NewsCard news={news} key={i}/>
+                        ))
+                    }
+                </div>
+            ) : (
+                <div className="empty">
+                    <h2>No movies found</h2>
+                </div>
+            )}
         </div>
     );
 }
