@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
+/*page design*/
 h1 {
     font-family: 'Fascinate', cursive;
     color: #aa2a2a;
@@ -45,8 +46,8 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
-    line-clamp: 3;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-clamp: 4;
     -webkit-box-orient: vertical;
 }
 
@@ -71,7 +72,33 @@ h1 {
 }
 
 .single-card a:hover .news-card {
-    -webkit-box-shadow: 0 0 5px 3px rgba(0,0,0,0.18);
-    box-shadow: 0 0 5px 3px rgba(0,0,0,0.18);
+    -webkit-box-shadow: -1px 0px 3px 1px rgba(0,0,0,0.25);
+    box-shadow: -1px 0px 3px 1px rgba(0,0,0,0.25);
     background-color: #efeded;
+}
+
+/*navigation page*/
+.navigation-bar {
+    display: flex;
+    background-color: #e2e2e2;
+}
+
+.navigation-bar .logo img{
+    width: 90px;
+}
+.navigation-bar .search img{
+    width: 28px;margin-right: 6px;
+}
+
+.navigation-bar .search input {
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    padding: 5px 40px 5px 10px;
+    margin-right: -34px;
+    font-family: 'Staatliches', cursive;
+}
+
+.navigation-bar .search img {
+    cursor: pointer;
 }

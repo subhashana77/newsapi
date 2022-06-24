@@ -15,7 +15,7 @@ const NewsCard = ({news},{i}) => {
                             <p>{news.author}</p>
                         </div>
                         <div className="col-6 news-card-footer mt-2">
-                            <p>{news.publishedAt}</p>
+                            <p className="float-end">{(news.publishedAt).substring(0, 10)}</p>
                         </div>
                     </div>
                 </div>
