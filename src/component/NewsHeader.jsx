@@ -21,7 +21,7 @@ const NewsHeader = ({setNewsTitle}) => {
                         type="text"
                         placeholder="Search news...."
                         // value={findNews}
-                        onChange={(event => setNewsTitle(event.target.value))}
+                        // onChange={(event => setNewsTitle(event.target.value))}
                     />
                     <img
                         className="mb-auto mt-auto"

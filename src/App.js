@@ -8,7 +8,7 @@ const API_URL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=2e1cd766
 function App() {
 
     const [news, setNews] = useState([]);
-    const [findNews, setFindNews] = useState("");
+    // const [findNews, setFindNews] = useState("");
 
     const searchNews = async () => {
         const response = await fetch(`${API_URL}`);
@@ -16,19 +16,19 @@ function App() {
         setNews(data.articles);
     }
 
-    const setNewsTitle = (newsTitle) => {
-        setFindNews(newsTitle);
-    }
+    // const setNewsTitle = (newsTitle) => {
+    //     setFindNews(newsTitle);
+    // }
 
-    let searchableTitle = "";
+    // let searchableTitle = "";
 
-    for (let i = 0; i < news.length; i++) {
-        if (findNews === news[i].title) {
-            searchableTitle = news[i].title;
-        }
-    }
-
-    console.log("Title : " + searchableTitle);
+    // for (let i = 0; i < news.length; i++) {
+    //     if (findNews === news[i].title) {
+    //         searchableTitle = news[i].title;
+    //     }
+    // }
+    //
+    // console.log("Title : " + searchableTitle);
 
     useEffect(() => {
         searchNews();
@@ -36,7 +36,8 @@ function App() {
 
     return (
         <>
-            <NewsHeader setNewsTitle={setNewsTitle}/>
+            {/*<NewsHeader setNewsTitle={setNewsTitle}/>*/}
+            <NewsHeader/>
             <div className="App container">
                 <h1 className="w-100 text-center mt-5 mb-4">News Paper Today</h1>
                 {news?.length > 0 ? (
@@ -49,7 +50,7 @@ function App() {
                     </div>
                 ) : (
                     <div className="empty">
-                        <h2>No movies found</h2>
+                        <h2>No news found</h2>
                     </div>
                 )}
             </div>
